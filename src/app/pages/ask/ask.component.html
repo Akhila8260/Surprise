@@ -1,0 +1,26 @@
+<div class="container">
+
+  <!-- 💖 Shadow Card Wrapper -->
+  <div class="valentine-card">
+
+    <!-- 🧸 Teddy GIF -->
+    <img src="assets/images/askcomponent.gif" alt="Cute Teddy" class="teddy-gif" />
+
+    <h1>Hii Nehu 💖</h1>
+    <p>Will you be my Valentine?</p>
+
+    <!-- 🎯 Buttons -->
+    <div class="buttons">
+      <button #yesBtn class="yes" (click)="yes()">
+        Yes 💕
+      </button>
+    </div>
+
+    <button class="no" (mouseenter)="moveNo()" (touchstart)="moveNo()" [style.left.px]="x" [style.top.px]="y">
+      {{ noText }}
+    </button>
+
+
+  </div>
+
+</div>

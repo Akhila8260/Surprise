@@ -1,0 +1,74 @@
+/* 🌸 Same background everywhere */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ffe6ec, #fff);
+}
+
+/* 💖 Shadow Card */
+.valentine-card {
+  background: #ffffff;
+  padding: 45px 50px;
+  border-radius: 28px;
+  text-align: center;
+  width: 420px;
+  box-shadow:
+    0 12px 25px rgba(255, 77, 109, 0.25),
+    0 6px 10px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1.5s ease;
+}
+
+/* 🧸 Teddy */
+.teddy-gif {
+  width: 150px;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* 💕 Buttons */
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background: #ffb3c6;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 😝 Message */
+.msg {
+  margin-top: 20px;
+  color: #ff4d6d;
+  min-height: 24px;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
